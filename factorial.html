@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+</head>
+<body>
+    <script>
+        const value = prompt(`enter any value`);
+
+        if(value<0){
+            document.write(`the factorial of ${value} is complicated`)
+        }
+
+        else if(value>0){
+            let result = 1
+            for(let i=1;i<=value;i++){
+                result*=i
+            }
+            document.write(`factorial of ${value} is ${result}`)
+        }
+
+        else {
+            document.write(`factorial of ${value} is always 1`)
+        }
+    </script>
+</body>
+</html>
